@@ -7,7 +7,7 @@ const { config } = require('./wdio.shared.conf');
 // automatically with the webdriverio service, just tell WebdriverIO
 // to or connect to the 'us', or the 'eu' region
 config.services = config.services.concat('sauce');
-config.region = 'eu'; // For us cloud, change this to 'us'
+config.region = 'us'; // For us cloud, change this to 'us'
 
 // =============================================
 // Max instances of the same device in the cloud

@@ -11,7 +11,8 @@ config.capabilities = [
     deviceName: 'Google Pixel 3*',
     automationName: 'UiAutomator2',
     // The api key that has a reference to the app-project in the TO cloud
-    testobject_api_key: process.env.SAUCE_RDC_EU_ACCESS_KEY_ANDROID,
+    //testobject_api_key: process.env.SAUCE_RDC_EU_ACCESS_KEY_ANDROID,
+    testobject_api_key: process.env.SAUCE_RDC_US_ACCESS_KEY_ANDROID_SAMPLE_APP,
     // The name of the test for in the cloud
     testobject_test_name: 'sample-app-mobile',
     // Some default settings
