@@ -1,7 +1,4 @@
-import LoginScreen from '../../screenObjects/login';
-import InventoryListScreen from '../../screenObjects/inventoryList';
 import { restartApp } from '../../helpers/utils';
-import { LOGIN_USERS } from '../../helpers/e2eConstants';
 
 describe('Login', () => {
   beforeEach(() => {
@@ -13,7 +10,7 @@ describe('Login', () => {
   });
 
   it('should open', () => {
-    browser.$('//*[@accessibilityId=\'Navigate up\']').click();
+    $('//*[@accessibilityId=\'Navigate up\']').click();
     expect($('#com.hilton.android.hhonors.dev.debug:id/search_bar').isDisplayed()).toBeTrue();
   });
 });
