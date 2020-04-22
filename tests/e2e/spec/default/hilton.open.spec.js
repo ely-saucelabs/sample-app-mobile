@@ -10,7 +10,9 @@ describe('Login', () => {
   });
 
   it('should open', () => {
-    $('//*[@accessibilityId=\'Navigate up\']').click();
+    //Finding an element by accessibility Id
+    cont element = $('~Navigate up');
+    element.click();
     expect($('#com.hilton.android.hhonors.dev.debug:id/search_bar').isDisplayed()).toBeTrue();
   });
 });
