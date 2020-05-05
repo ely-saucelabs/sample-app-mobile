@@ -16,6 +16,7 @@
     "ios.local.dev": "./node_modules/.bin/wdio tests/e2e/config/wdio.ios.local.dev.conf.js",
     "ios.local.sim": "./node_modules/.bin/wdio tests/e2e/config/wdio.ios.local.sim.conf.js",
     "ios.rdc": "./node_modules/.bin/wdio ./tests/e2e/config/wdio.ios.rdc.conf.js",
+    "ios.rdc.hilton":"./node_modules/.bin/wdio ./tests/e2e/config/wdio.ios.rdc.conf.js --spec=hilton.open.spec.js --logLevel=trace",
     "ios.clear.build": "yarn clear.cache && rm -rf ./ios/build/Build/Products/Release-iphonesimulator",
     "ios.release": "react-native run-ios --configuration Release",
     "ios.sim.build": "yarn ios.clear.build && npm run ios.release",
